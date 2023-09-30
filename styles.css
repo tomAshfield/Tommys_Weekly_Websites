@@ -1,0 +1,127 @@
+body{
+    background-color: black;
+}
+
+.startUp{
+    opacity: 1;
+    display: block;
+    animation-fill-mode: forwards;
+    animation: none; 
+}
+
+.test {
+    color: white;
+    top: 10%;
+    position: absolute;
+    opacity: 0;
+    left: -100%;
+    font-size: 4vw;
+    text-align: center;
+    animation-fill-mode: forwards;
+    animation: slideRight 3s ease-in-out forwards; 
+    animation-delay: 0s;
+    z-index: 1;
+  }
+
+.test2 {
+    color: white;
+    top: 25%;
+    position: absolute;
+    opacity: 0;
+    left: 0%;
+    font-size: 4vw;
+    text-align: center;
+    animation-fill-mode: forwards;
+    animation: slideLeft 3s ease-in-out forwards; 
+    animation-delay: 1s;
+    z-index: 1;
+  }
+
+.test3 {
+    color: white;
+    top: 30%;
+    position: absolute;
+    opacity: 0;
+    left: 34%;
+    font-size: 4vw;
+    text-align: center;
+    animation-fill-mode: forwards;
+    animation: slideUp 3s ease-in-out forwards; 
+    animation-delay: 2s;
+    z-index: 1;
+  }
+
+canvas{
+    display: block;
+    opacity: 1;
+}
+
+.proceed {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    opacity: 0;
+    color: white;
+    z-index: 1;
+    width: 14%;
+    height: 5;
+    font-size: 2vw;
+    border-color: white;
+    border-radius: 12px;
+    background-color: black;
+    animation: changeOpacityOn 3s ease-in-out forwards;
+    animation-delay: 5s;
+}
+  
+
+@keyframes slideRight {
+  0% {
+      opacity: 0;
+      left: -500%;
+  }
+  100% {
+      opacity: 1;
+      left: 35%;
+  }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        left: 500%;
+    }
+    100% {
+        opacity: 1;
+        left: 37%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        top: 500%;
+    }
+    100% {
+        opacity: 1;
+        top: 40%;
+    }
+}
+
+@keyframes changeOpacityOn {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes changeOpacityOff {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
