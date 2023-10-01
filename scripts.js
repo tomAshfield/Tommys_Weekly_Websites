@@ -1,13 +1,82 @@
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+class projectCard {
+    constructor(title, link, desc, date, photo){
+        this.title = title
+        this.link = link
+        this.desc = desc
+        this.date = date
+        this.photo = photo
+    }
+}
+
+testProj = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj1 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj2 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj3 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj4 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj5 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj6 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj7 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj8 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+testProj9 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
+cardArr = [testProj, testProj1, testProj2, testProj3, testProj4, testProj5, testProj6, testProj7, testProj8, testProj9]
+c = document.getElementById("Cards");
+
+
+async function delayedLoop() {
+    for(i = 0; i < cardArr.length; i++){
+        createCard(cardArr[i], i)
+        await delay(750)
+    }
+}
+
+function createCard(card, cardNum){
+    var articleElement = document.createElement('article');
+    var titleElement = document.createElement('h1');
+    var dateElement = document.createElement('h2');
+    var linkElement = document.createElement('a');
+    var descElement = document.createElement('p');
+    //var photoElement = document.createElement('img');
+
+    titleElement.textContent = card.title;
+    titleElement.className = "title"
+
+    dateElement.textContent = card.date;
+    dateElement.className = "date"
+
+    linkElement.href = card.link;
+    linkElement.target = '_blank';
+    linkElement.textContent = card.link;
+    linkElement.className = "link"
+
+    descElement.textContent = card.desc;
+    descElement.className = "desc"
+
+    //photoElement.src = card.photo;
+
+    articleElement.appendChild(titleElement)
+    articleElement.appendChild(dateElement)
+    articleElement.appendChild(linkElement)
+    articleElement.appendChild(descElement)
+    //articleElement.appendChild(photoElement)
+    articleElement.className = "card" + cardNum
+    articleElement.classList.add('opacityOn')
+    $(".card" + cardNum).addClass("card")
+    c.appendChild(articleElement)
+}
+
+
+
+
+
+
 p = document.getElementById("start-Up");
-
-$(".proceed").click(function(){
-    proceed()
-    wait(5 * 1000).then(() => toggleFireworks())
-    wait(5 * 1000).then(() =>p.style.display = "none")
-  });
-
-
+m = document.getElementById("main-Website");
 function proceed(){
     p.style.animation = "changeOpacityOff 5s backwards";
 }
@@ -172,4 +241,11 @@ setTimeout(function() {
         then = now;
         birthday.update(delta / 1000);
       }})()
-  }, 4400); // Delay for 6 seconds (6000 milliseconds)
+  }, 3000);
+
+wait(7 * 1000).then(() => proceed())
+wait(11 * 1000).then(() => toggleFireworks())
+wait(11 * 1000).then(() =>p.style.display = "none")
+wait(11.5 * 1000).then(() =>m.style.display = "block")
+wait(12 * 1000).then(() => setTimeout( function() { $(".mainWebsite").addClass("big"); }, 1 ));
+wait(14 * 1000).then(() =>delayedLoop())

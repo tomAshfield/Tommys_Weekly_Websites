@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tommy's Weekly Websites</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
     <body>
         <div class="startUp" id="start-Up">
@@ -13,9 +16,38 @@
             <div class="test2"><h1>Weekly</h1></div>
             <div class="test3"><h1>Websites!</h1></div>
             <canvas id="birthday"></canvas>
-            <button class="proceed">Go Ahead!</button>
         </div>
 
+        <div class="mainWebsite" id="main-Website">
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo">Tommy's Weekly Websites</div>
+            
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+            
+                  <!-- USING CHECKBOX HACK -->
+                  <input type="checkbox" id="checkbox_toggle" />
+                  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            
+                  <!-- NAVIGATION MENUS -->
+                  <div class="menu">
+            
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="https://www.linkedin.com/in/thomasashfield/" target="_blank">LinkedIn</a></li>
+                    <li><a href="/">Contact</a></li>
+                  </div>
+                </ul>
+              </nav>
+
+              <div class="cardsArea" id="cards-Area">
+                <section class="cards" id="Cards">
+
+
+                </section>
+              </div>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="scripts.js"></script>
