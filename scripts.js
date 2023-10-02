@@ -14,7 +14,7 @@ class projectCard {
     }
 }
 
-Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/FindMyState/", "A small project to conduct individual research into API utilization and exploring responsive design strategies.", "9/24/23 - 10/1/23", "images/find_my_state.png")
+Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/FindMyState/", "A small project to conduct individual research into API utilization and responsive design strategies.", "9/24/23 - 10/1/23", "images/find_my_state.png")
 
 
 cardArr = [Find_My_State]

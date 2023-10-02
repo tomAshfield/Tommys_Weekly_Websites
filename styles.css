@@ -251,6 +251,26 @@ article:hover{
 }
 
   @media (max-width: 768px) {
+    article{
+        opacity: 0;
+        animation: none;
+        width: 300px;
+        height: 350px;
+        border-color: black;
+        border-radius: 8px;
+        border-style: solid;
+        text-align: center;
+        background-color: rgb(255,255,255);
+     }
+
+     .photo {
+        position: relative;
+        top: 10px;
+        height: auto;
+        max-width: 80%;
+        border-radius: 8px;
+    }
+
     .menu {
        display:none;
        position: absolute;
