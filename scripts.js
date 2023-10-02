@@ -83,7 +83,7 @@ function proceed(){
 
 // helper functions
 const PI2 = Math.PI * 2
-const random = (min, max) => (Math.random() * (max - min) + min + 100)| 0
+const random = (min, max) => Math.random() * (max - min + 1) + min | 0
 const timestamp = _ => new Date().getTime()
 
 // container
@@ -109,6 +109,22 @@ class Birthday {
     
   }
   
+  onClick(evt) {
+     let x = evt.clientX || evt.touches && evt.touches[0].pageX
+     let y = evt.clientY || evt.touches && evt.touches[0].pageY
+     
+     let count = random(3,5)
+     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        x,
+        y,
+        random(0, 260),
+        random(30, 110)))
+          
+     this.counter = -1
+     
+  }
   
   update(delta) {
     ctx.globalCompositeOperation = 'hard-light'
@@ -127,10 +143,9 @@ class Birthday {
         random(0, this.width),
         random(this.spawnC, this.spawnD),
         random(0, 360),
-        random(30, 110)))
+        random(200, 500))) //changes the firework size
       this.counter = 0
     }
-
     // remove the dead fireworks
     if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
 
