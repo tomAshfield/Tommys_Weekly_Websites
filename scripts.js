@@ -14,18 +14,12 @@ class projectCard {
     }
 }
 
-testProj = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj1 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj2 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj3 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj4 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj5 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj6 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj7 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj8 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-testProj9 = new projectCard("Test Project", "Test Link", "Test Desc", "Test Date", "Test Photo")
-cardArr = [testProj, testProj1, testProj2, testProj3, testProj4, testProj5, testProj6, testProj7, testProj8, testProj9]
+Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/FindMyState/", "A small project to conduct individual research into API utilization and exploring responsive design strategies.", "9/24/23 - 10/1/23", "images/find_my_state.png")
+
+
+cardArr = [Find_My_State]
 c = document.getElementById("Cards");
+ca = document.getElementById("cards-Area")
 
 
 async function delayedLoop() {
@@ -41,7 +35,7 @@ function createCard(card, cardNum){
     var dateElement = document.createElement('h2');
     var linkElement = document.createElement('a');
     var descElement = document.createElement('p');
-    //var photoElement = document.createElement('img');
+    var photoElement = document.createElement('img');
 
     titleElement.textContent = card.title;
     titleElement.className = "title"
@@ -57,13 +51,14 @@ function createCard(card, cardNum){
     descElement.textContent = card.desc;
     descElement.className = "desc"
 
-    //photoElement.src = card.photo;
+    photoElement.src = card.photo;
+    photoElement.className = "photo"
 
     articleElement.appendChild(titleElement)
     articleElement.appendChild(dateElement)
     articleElement.appendChild(linkElement)
     articleElement.appendChild(descElement)
-    //articleElement.appendChild(photoElement)
+    articleElement.appendChild(photoElement)
     articleElement.className = "card" + cardNum
     articleElement.classList.add('opacityOn')
     $(".card" + cardNum).addClass("card")
@@ -83,15 +78,12 @@ function proceed(){
 
 
 
-
-
-
 //Firework Functions
 //##########################################################################
 
 // helper functions
 const PI2 = Math.PI * 2
-const random = (min, max) => Math.random() * (max - min + 1) + min | 0
+const random = (min, max) => (Math.random() * (max - min) + min + 100)| 0
 const timestamp = _ => new Date().getTime()
 
 // container
@@ -244,8 +236,9 @@ setTimeout(function() {
   }, 3000);
 
 wait(7 * 1000).then(() => proceed())
-wait(11 * 1000).then(() => toggleFireworks())
+wait(12 * 1000).then(() => toggleFireworks())
 wait(11 * 1000).then(() =>p.style.display = "none")
 wait(11.5 * 1000).then(() =>m.style.display = "block")
 wait(12 * 1000).then(() => setTimeout( function() { $(".mainWebsite").addClass("big"); }, 1 ));
+wait(13 * 1000).then(() => $('body').css('background-color', '#EFEFEF'));
 wait(14 * 1000).then(() =>delayedLoop())
