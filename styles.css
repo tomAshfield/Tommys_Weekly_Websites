@@ -218,6 +218,7 @@ article:hover{
 .link{
     position: relative;
     top: 15px;
+    padding-bottom: 5px;
     margin-top: 2%;
     position: relative;
     font-size: 14px;
@@ -234,11 +235,12 @@ article:hover{
     position: relative;
     font-size: 14px;
     font-style: italic;
+    padding-bottom: 15px;
 }
 
 .photo {
     position: relative;
-    top: 20px;
+    top: 10px;
     height: auto;
     max-width: 90%;
     border-radius: 8px;
