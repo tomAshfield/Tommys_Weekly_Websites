@@ -217,7 +217,7 @@ article:hover{
 
 .link{
     position: relative;
-    top: 3%;
+    top: 15px;
     margin-top: 2%;
     position: relative;
     font-size: 14px;
@@ -229,7 +229,7 @@ article:hover{
 
 .desc{
     position: relative;
-    top: 5%;
+    top: 20px;
     margin-top: 2%;
     position: relative;
     font-size: 14px;
@@ -238,7 +238,7 @@ article:hover{
 
 .photo {
     position: relative;
-    top: 5%;
+    top: 20px;
     height: auto;
     max-width: 90%;
     border-radius: 8px;
