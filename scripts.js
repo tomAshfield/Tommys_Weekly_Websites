@@ -143,7 +143,7 @@ class Birthday {
         random(0, this.width),
         random(this.spawnC, this.spawnD),
         random(0, 360),
-        random(200, 500))) //changes the firework size
+        random(100, 200))) //changes the firework size
       this.counter = 0
     }
     // remove the dead fireworks
