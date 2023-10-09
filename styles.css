@@ -240,8 +240,8 @@ article:hover{
 
 .photo {
     position: relative;
-    top: 10px;
-    height: auto;
+    top: 15px;
+    max-height: 175px;
     max-width: 90%;
     border-radius: 8px;
 }
