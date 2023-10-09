@@ -16,8 +16,9 @@ class projectCard {
 
 Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/FindMyState/", "A small project to conduct individual research into API utilization and responsive design strategies.", "1/9/23 - 1/15/23", "images/find_my_state.png")
 Decyde = new projectCard("Decyde 2.0", "https://tomashfield.github.io/DECYDE_2.0/index.html", "A passion project designed to assist individuals dealing with daily indecision. If you find yourself grappling with choices, we've got your back when it comes to making decisions!", "12/18/22 - 2/1/23", "images/decyde.png")
+StopWatch = new projectCard("Tommy's StopWatch", "https://tomashfield.github.io/Tommys_Stop_Watch/", "A small side project because I couldn't pump out the main project I wanted to this weekend. Be on the lookout for next weeks project!", "10/6/23 - 10/8/23", "images/stopwatch.png")
 
-cardArr = [Decyde, Find_My_State]
+cardArr = [StopWatch, Decyde, Find_My_State]
 c = document.getElementById("Cards");
 ca = document.getElementById("cards-Area")
 
