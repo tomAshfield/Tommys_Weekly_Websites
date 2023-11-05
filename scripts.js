@@ -18,8 +18,9 @@ Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/
 Decyde = new projectCard("Decyde 2.0", "https://tomashfield.github.io/DECYDE_2.0/index.html", "A passion project designed to assist individuals dealing with daily indecision. If you find yourself grappling with choices, we've got your back when it comes to making decisions!", "12/18/22 - 2/1/23", "images/decyde.png");
 StopWatch = new projectCard("Tommy's StopWatch", "https://tomashfield.github.io/Tommys_Stop_Watch/", "Start, stop, and refresh your time with a user friendly interface. Future roadmap is have it continuously run without while on other tabs.", "10/6/23 - 10/8/23", "images/Stop-Watch.png");
 Random_Recipes = new projectCard("Random Recipes", "https://tomashfield.github.io/Random_Recipes/", "Explore the wonders of cooking and uncover fresh recipes, creators, methods, and memories through the guidance of Random Recipes!", "10/13/23 - 10/15/23", "images/random_recipes.png");
+Capture_My_Flag = new projectCard("Capture My Flag", "https://tomashfield.github.io/Capture_The_Flag/", "A website that showcases my first CTF problem! Made with a simple firebase system, try your hand at uncovering Delaware's BEST bathroom!!!", "11/4/23 - 11/5/23", "images/best_bathrooms.png");
 
-cardArr = [Random_Recipes, StopWatch, Decyde, Find_My_State]
+cardArr = [Capture_My_Flag, Random_Recipes, StopWatch, Decyde, Find_My_State]
 c = document.getElementById("Cards");
 ca = document.getElementById("cards-Area")
 
