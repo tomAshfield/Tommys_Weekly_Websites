@@ -14,13 +14,15 @@ class projectCard {
     }
 }
 
-Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/FindMyState/", "A small project to conduct individual research into API utilization and responsive design strategies. Turn on your location to figure out what state you're currently in!", "1/9/23 - 1/15/23", "images/find_my_state.png");
-Decyde = new projectCard("Decyde 2.0", "https://tomashfield.github.io/DECYDE_2.0/index.html", "A passion project designed to assist individuals dealing with daily indecision. If you find yourself grappling with choices, we've got your back when it comes to making decisions!", "12/18/22 - 2/1/23", "images/decyde.png");
-StopWatch = new projectCard("Tommy's StopWatch", "https://tomashfield.github.io/Tommys_Stop_Watch/", "Start, stop, and refresh your time with a user friendly interface. Future roadmap is have it continuously run without while on other tabs.", "10/6/23 - 10/8/23", "images/Stop-Watch.png");
-Random_Recipes = new projectCard("Random Recipes", "https://tomashfield.github.io/Random_Recipes/", "Explore the wonders of cooking and uncover fresh recipes, creators, methods, and memories through the guidance of Random Recipes!", "10/13/23 - 10/15/23", "images/random_recipes.png");
-Capture_My_Flag = new projectCard("Capture My Flag", "https://tomashfield.github.io/Capture_The_Flag/", "A website that showcases my first CTF problem! Made with a simple firebase system, try your hand at uncovering Delaware's BEST bathroom!!!", "11/4/23 - 11/5/23", "images/best_bathrooms.png");
+const Find_My_State = new projectCard("Find My State", "https://tomashfield.github.io/FindMyState/", "A small project to conduct individual research into API utilization and responsive design strategies. Turn on your location to figure out what state you're currently in!", "1/9/23 - 1/15/23", "images/find_my_state.png");
+const Decyde = new projectCard("Decyde 2.0", "https://tomashfield.github.io/DECYDE_2.0/index.html", "A passion project designed to assist individuals dealing with daily indecision. If you find yourself grappling with choices, we've got your back when it comes to making decisions!", "12/18/22 - 2/1/23", "images/decyde.png");
+const StopWatch = new projectCard("Tommy's StopWatch", "https://tomashfield.github.io/Tommys_Stop_Watch/", "Start, stop, and refresh your time with a user friendly interface. Future roadmap is have it continuously run without while on other tabs.", "10/6/23 - 10/8/23", "images/Stop-Watch.png");
+const Random_Recipes = new projectCard("Random Recipes", "https://tomashfield.github.io/Random_Recipes/", "Explore the wonders of cooking and uncover fresh recipes, creators, methods, and memories through the guidance of Random Recipes!", "10/13/23 - 10/15/23", "images/random_recipes.png");
+const Capture_My_Flag = new projectCard("Capture My Flag", "https://tomashfield.github.io/Capture_The_Flag/", "A website that showcases my first CTF problem! Made with a simple firebase system, try your hand at uncovering Delaware's BEST bathroom!!!", "11/4/23 - 11/5/23", "images/best_bathrooms.png");
+const Sunvial = new projectCard("Sunvial", "https://sunvial-83daf.web.app/", "My best looking website by far! Professionally freelanced for my brothers band, comes with a local editing tool for the band to make any updates to the website in the future.", "12/23/23 - 1/17/24", "images/sunvial.png")
+const PhotoBooth = new projectCard("PhotoBooth", "https://photobooth-3b7ab.web.app/", "My best functioning website by far! An instagram clone for my college friends to make memories before and after graduation. Very proud of how it turned out :)", "4/16/24 - 6/18/24", "images/photobooth.png")
 
-cardArr = [Capture_My_Flag, Random_Recipes, StopWatch, Decyde, Find_My_State]
+cardArr = [PhotoBooth, Sunvial, Capture_My_Flag, Random_Recipes, StopWatch, Decyde, Find_My_State]
 c = document.getElementById("Cards");
 ca = document.getElementById("cards-Area")
 
