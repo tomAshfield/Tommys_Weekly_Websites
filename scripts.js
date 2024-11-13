@@ -21,8 +21,9 @@ const Random_Recipes = new projectCard("Random Recipes", "https://tomashfield.gi
 const Capture_My_Flag = new projectCard("Capture My Flag", "https://tomashfield.github.io/Capture_The_Flag/", "A website that showcases my first CTF problem! Made with a simple firebase system, try your hand at uncovering Delaware's BEST bathroom!!!", "11/4/23 - 11/5/23", "images/best_bathrooms.png");
 const Sunvial = new projectCard("Sunvial", "https://sunvial-83daf.web.app/", "My best looking website by far! Professionally freelanced for my brothers band, comes with a local editing tool for the band to make any updates to the website in the future.", "12/23/23 - 1/17/24", "images/sunvial.png")
 const PhotoBooth = new projectCard("PhotoBooth", "https://photobooth-3b7ab.web.app/", "My best functioning website by far! An instagram clone for my college friends to make memories before and after graduation. Very proud of how it turned out :)", "4/16/24 - 6/18/24", "images/photobooth.png")
+const ThreeDPortfolio = new projectCard("3d-Portfolio", "https://tomashfield.github.io/3d-Portfolio/", "A portfolio website featuring 3D models to add an extra layer of depth, showcasing the various roles and positions I've held across different companies.", "9/23/24 - 9/27/24", "images/3d_Portfolio.png")
 
-cardArr = [PhotoBooth, Sunvial, Capture_My_Flag, Random_Recipes, StopWatch, Decyde, Find_My_State]
+cardArr = [ThreeDPortfolio, PhotoBooth, Sunvial, Capture_My_Flag, Random_Recipes, StopWatch, Decyde, Find_My_State]
 c = document.getElementById("Cards");
 ca = document.getElementById("cards-Area")
 
